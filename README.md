@@ -9,6 +9,7 @@ Este proyecto tiene como objetivo principal construir un sitio web y una base de
 - Implementación de un sistema de inicio de sesión y permisos de usuario
 - Creación de un módulo de cotizaciones para los clientes
 - Desarrollo de un CRUD (Crear, Leer, Actualizar, Eliminar) para el manejo de productos, clientes, empleados y cotizaciones
+![módulo de cotizaciones](https://github.com/JuanseCZ/leon-bicicletas/blob/main/demo/quote-tool.png?raw=true)
 
 ## Tecnologías utilizadas
 - HTML
