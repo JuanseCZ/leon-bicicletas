@@ -1,4 +1,5 @@
 # Gestión de Catálogo, Inventario y Cotizaciones para León Bicicletas
+*Nota: También se trabajó una versión en inglés, la cual está en mantenimiento.*
 ![Página de inicio](https://github.com/JuanseCZ/leon-bicicletas/blob/main/demo/landing.png?raw=true)
 Este proyecto tiene como objetivo principal construir un sitio web y una base de datos para la empresa "León Bicicletas" con el fin de mejorar su visibilidad y optimizar su logística.
 
