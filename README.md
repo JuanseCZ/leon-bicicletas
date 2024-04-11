@@ -20,7 +20,7 @@ Este proyecto tiene como objetivo principal construir un sitio web y una base de
 - phpMyAdmin
 
 ## Documentación
-La documentación completa del proyecto se encuentra en el archivo [DOCUMENTACION FINAL LEON BICICLETAS.pdf](https://github.com/JuanseCZ/leon-bicicletas/blob/main/demo/DOCUMENTACION FINAL LEON BICICLETAS.pdf).
+La documentación completa del proyecto se encuentra en el archivo [DOCUMENTACION FINAL LEON BICICLETAS.pdf](./main/demo/DOCUMENTACION-FINAL-LEON-BICICLETAS.pdf).
 
 ## Integrantes del equipo
 - Juan Sebastian Cardona Zuluaga
