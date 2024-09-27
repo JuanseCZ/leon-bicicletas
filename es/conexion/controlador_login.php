@@ -5,7 +5,7 @@ if (!empty($_POST["btningresar"])) {
     if (!empty($_POST["usuario"]) and !empty($_POST["password"])) {
         $usuario = $_POST["usuario"];
         $password = $_POST["password"];
-        // $password = MD5($password);
+        $password = hash("sha256", $password);
         $sql = $conn->query("select * from empleados where usr = '$usuario' and passwd = '$password'");
         if ($datos = $sql->fetch_object()) {
             $_SESSION["id"]=$datos->idEmple;
