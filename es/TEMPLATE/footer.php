@@ -10,29 +10,40 @@ if (empty($whereami)) {
         <p class="col-md-4 mb-0 text-body-secondary">© 2023 León Bicicletas</p>
 
         <a href="/"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"><img
-                src="<?php echo $whereami ?>./adobe/leonlogonuevo-01.png" alt="" style="height: 6vh;"></a>
-
+           class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="<?php echo $whereami ?>./adobe/leonlogonuevo-01.png" alt="" style="height: 6vh;">
+        </a>
 
         <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="<?php echo $whereami ?>./index.php"
-                    class="nav-link px-2 text-body-secondary">Inicio</a></li>
-            <li class="nav-item"><a href="<?php echo $whereami ?>./catalogo.php"
-                    class="nav-link px-2 text-body-secondary">Catálogo</a>
-            </li>
-            <li class="nav-item"><a href="<?php echo $whereami ?>./nosotros.php"
-                    class="nav-link px-2 text-body-secondary">Nosotros</a>
-            </li>
-            <li class="nav-item"><a href="<?php echo $whereami ?>./contacto.php"
-                    class="nav-link px-2 text-body-secondary">Contáctenos</a>
-            </li>
-            <li class="nav-item"><a href="<?php echo $whereami ?>./empleados.php"
-                    class="nav-link px-2 text-body-secondary">Empleados</a>
-            </li>
+            <li class="nav-item"><a href="<?php echo $whereami ?>./index.php" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="<?php echo $whereami ?>./catalogo.php" class="nav-link px-2 text-body-secondary">Catálogo</a></li>
+            <li class="nav-item"><a href="<?php echo $whereami ?>./nosotros.php" class="nav-link px-2 text-body-secondary">Nosotros</a></li>
+            <li class="nav-item"><a href="<?php echo $whereami ?>./contacto.php" class="nav-link px-2 text-body-secondary">Contáctenos</a></li>
+            <li class="nav-item"><a href="<?php echo $whereami ?>./empleados.php" class="nav-link px-2 text-body-secondary">Empleados</a></li>
         </ul>
     </footer>
 </div>
 
-</body>
+<!-- Cookie Consent -->
+<div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: #fff; padding: 10px; text-align: center; display: none;">
+    Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio, usted acepta nuestra política de cookies.
+    <button id="acceptCookies" style="margin-left: 10px; padding: 5px 10px; background: #28a745; color: #fff; border: none; cursor: pointer;">Aceptar</button>
+</div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Check if cookie consent is already established
+        if (!document.cookie.split('; ').find(row => row.startsWith('cookie_consent='))) {
+            // If not, keep showing cookie consent
+            document.getElementById('cookieConsent').style.display = 'block';
+        }
+
+        document.getElementById('acceptCookies').addEventListener('click', function() {
+            document.cookie = "cookie_consent=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 días
+            document.getElementById('cookieConsent').style.display = 'none';
+        });
+    });
+</script>
+
+</body>
 </html>
