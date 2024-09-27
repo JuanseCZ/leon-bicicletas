@@ -72,6 +72,18 @@ include './TEMPLATE/headCRUDnoIndex.php';
                         <label>Texto</label>
                         <textarea type="text" name="textCon" class="form-control" required></textarea>
                     </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="aceptar_terminos" id="aceptar_terminos" required>
+                        <label for="aceptar_terminos">
+                            Acepto los <a href="files/terminos_y_condiciones.pdf" target="_blank">Términos y Condiciones</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="aceptar_privacidad" id="aceptar_privacidad" required>
+                        <label for="aceptar_privacidad">
+                            Acepto el <a href="files/aviso_privacidad.pdf" target="_blank">Aviso de Privacidad</a>
+                        </label>
+                    </div>
                     <br>
                     <input type="submit" class="btn btn-success" value="Subir">
                     <a href="./index.php" class="btn btn-secondary ml-2">Cancelar</a>

@@ -54,10 +54,10 @@ include './TEMPLATE/nav.php';
 
                 <input name="btningresar" class="btn btn-success w-100 py-2" type="submit" value="Iniciar sesión">
             </form>
+            <br>
+            <a href="registro.php" class="btn btn-primary w-100 py-2">Registrarse</a>
         </main>
     </div>
-    </div>
-
 
 <?php
 include './TEMPLATE/footer.php';

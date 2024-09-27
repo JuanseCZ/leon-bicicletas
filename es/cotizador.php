@@ -131,6 +131,18 @@ include './TEMPLATE/nav.php';
                                             <input type="email" class="form-control" id="correoCot" name="correoCot"
                                                 required>
                                         </div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="aceptar_terminos" name="aceptar_terminos" required>
+                                            <label for="aceptar_terminos">
+                                                Acepto los <a href="files/terminos_y_condiciones.pdf" target="_blank">Términos y Condiciones</a>
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="aceptar_privacidad" name="aceptar_privacidad" required>
+                                            <label for="aceptar_privacidad">
+                                                Acepto el <a href="files/aviso_privacidad.pdf" target="_blank">Aviso de Privacidad</a>
+                                            </label>
+                                        </div>
                                     </div>
 
                                     <button type="submit" class="btn btn-primary btn-lg btn-block col-12">Enviar</button>

@@ -5,6 +5,9 @@ include './cotizar.php';
 $title = "Cotización enviada";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    if (!isset($_POST['aceptar_terminos']) || !isset($_POST['aceptar_privacidad'])) {
+        die("Debe aceptar los términos y condiciones y el aviso de privacidad para continuar.");
+    }
 
     $total=0;
     $Correo= $_POST['correoCot'];

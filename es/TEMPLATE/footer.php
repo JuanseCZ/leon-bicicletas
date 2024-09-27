@@ -25,25 +25,29 @@ if (empty($whereami)) {
 </div>
 
 <!-- Cookie Consent -->
-<div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: #fff; padding: 10px; text-align: center; display: none;">
+<div id="cookieConsent" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: #fff; padding: 10px; text-align: center;">
     Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio, usted acepta nuestra política de cookies.
     <button id="acceptCookies" style="margin-left: 10px; padding: 5px 10px; background: #28a745; color: #fff; border: none; cursor: pointer;">Aceptar</button>
 </div>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
+        const cookieConsent = document.getElementById('cookieConsent');
+        const acceptButton = document.getElementById('acceptCookies');
+
         // Check if cookie consent is already established
-        if (!document.cookie.split('; ').find(row => row.startsWith('cookie_consent='))) {
-            // If not, keep showing cookie consent
-            document.getElementById('cookieConsent').style.display = 'block';
+        if (!document.cookie.includes('cookie_consent=true')) {
+            cookieConsent.style.display = 'block';
         }
 
-        document.getElementById('acceptCookies').addEventListener('click', function() {
-            document.cookie = "cookie_consent=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 días
-            document.getElementById('cookieConsent').style.display = 'none';
+        acceptButton.addEventListener('click', function() {
+            document.cookie = "cookie_consent=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 days
+            cookieConsent.style.display = 'none';
+            console.log("Cookies accepted and consent stored.");
         });
+
+        console.log("Cookie consent script loaded.");
     });
 </script>
-
 </body>
 </html>

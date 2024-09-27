@@ -24,11 +24,25 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
     $input_cat = trim($_POST["categoria"]);
 
     
-    $sql = "UPDATE productos SET nomProd = ?, imgProd = ?, descripcionProd = ?, precio = ?, stock = ?, idCat = ? WHERE
-idProd=?";
+    $sql = "UPDATE productos 
+            SET nomProd = ?, 
+                imgProd = ?, 
+                descripcionProd = ?, 
+                precio = ?, 
+                stock = ?, 
+                idCat = ? WHERE 
+                idProd=?";
+
     if ($stmt = $conn->prepare($sql)) {
         
-        $stmt->bind_param("sssssss", $param_nombre, $param_imagen, $param_descripcion, $param_precio, $param_stock, $param_categoria, $param_id);
+        $stmt->bind_param("sssssss",
+            $param_nombre,
+            $param_imagen,
+            $param_descripcion,
+            $param_precio,
+            $param_stock,
+            $param_categoria,
+            $param_id);
         
         $param_nombre = $input_nombre;
         $param_imagen = $input_imagen;

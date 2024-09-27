@@ -28,7 +28,7 @@ include './TEMPLATE/nav.php';
     </div>
     <div class="carousel-inner">
         <div class="carousel-item">
-            <img src="./images/Carrusel1.png" class="d-block h-100" alt="">
+            <img src="./images/Carrusel1.png" class="d-block w-100" alt="">
             <div class="container">
                 <div class="carousel-caption text-start">
                     <h1>Visita nuestro catálogo.</h1>
@@ -38,7 +38,7 @@ include './TEMPLATE/nav.php';
             </div>
         </div>
         <div class="carousel-item active">
-            <img src="./images/Carrusel2.png" class="d-block h-100" alt="">
+            <img src="./images/Carrusel2.png" class="d-block w-100" alt="">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Servicio de mantenimiento y reparación.</h1>
@@ -49,7 +49,7 @@ include './TEMPLATE/nav.php';
             </div>
         </div>
         <div class="carousel-item">
-            <img src="./images/Carrusel3.png" class="d-block h-100" alt="">
+            <img src="./images/Carrusel3.png" class="d-block w-100" alt="">
             <div class="container">
                 <div class="carousel-caption text-end">
                     <h1>Conócenos.</h1>
