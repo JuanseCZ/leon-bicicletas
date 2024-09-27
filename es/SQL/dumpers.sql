@@ -98,7 +98,7 @@ INSERT INTO
         nomEmple, apeEmple, isadmin, usr, passwd
     )
 VALUES (
-        'Juan', 'Cardona', '1', 'jcardona01', 'c7c7b1cf96169149795cc3d862956b09' -- yH!44@I!3AFI  
+        'Juan', 'Cardona', '1', 'root', '4813494d137e1631bba301d5acab6e7bb7aa74ce1185d456565ef51d737677b2' -- root
     ),
     (
         'Eduardo', 'Nuñez', '1', 'jnunez01', '5b112d8e1dcb00581a6f61d3d15611bf' -- %nT5&2N6JRN6  
